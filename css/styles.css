@@ -180,7 +180,11 @@ a {
 
 .title {
     display: block;
-        background-color: #2e2f42;
+        background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), 
+        rgba(46, 47, 66, 0.7)), 
+        url(/goit-markup-hw-04/images/people-office.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
     padding: 188px 0;
 }
 
@@ -244,23 +248,38 @@ a {
     margin-bottom: 8px;
 }
 
+.adv-text {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .adv-list-item {
     display: flex;
         align-items: flex-start;
         justify-content: flex-start;
         flex-direction: column;
         gap: 8px;
+        height: 224px;
         width: calc((100% - 72px) / 4);
+}
+
+.icon-container {
+    padding: 24px 0;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #8e8f99;
+        border-radius: 4px;
+        height: 112px;
+        width: 264px;
+        background-color: #f4f4fd;
 }
 
 /* team */
 
 .team {
     padding: 120px 156px;
-}
-
-.team-container {
-
 }
 
 .list-item {
@@ -311,6 +330,19 @@ display: flex;
     display: block;
     max-width: 100%;
     object-fit: fill;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    background-color: #4d5ae5;
 }
 
 /* portfolio */
@@ -381,4 +413,10 @@ display: flex;
 
 .footer-logo .logo-part {
     color: #f4f4fd;
+}
+
+.footer-social-media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
