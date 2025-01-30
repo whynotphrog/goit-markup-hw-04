@@ -210,6 +210,7 @@ border-radius: 2px;
         background-size: cover;
         background-position: center;
         padding: 188px 0;
+        margin: 0 auto;
 }
 
 .title-container {
